@@ -33,8 +33,19 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  font-family: 'Fira Sans', 'Microsoft Yahei', sans-serif;
 }
+
+
+
+// Custom Styles
+
+code, kbd, pre, samp {
+  font-family: "Fira Code", monospace;
+}
+
+
+
 
 /* --- Typography --- */
 
