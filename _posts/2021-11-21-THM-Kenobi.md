@@ -5,7 +5,7 @@ author:
   link: https://github.com/0xKirito
 date: 2021-11-21 02:33:29 +05:30
 categories: [Writeups, TryHackMe]
-tags: [THM, ProFTPD, Knife]
+tags: [THM, ProFTPD, PATH]
 render_with_liquid: false
 ---
 
