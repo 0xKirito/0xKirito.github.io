@@ -28,6 +28,6 @@ render_with_liquid: false
 - We can tell from the URL `exe.x/neila.htraeyortsed/:ptth` that some part of the payload is reversed.
 - But the file name that this powershell command is downloading looks like an encoded string.
 - `99zP_MHMyNGNt9FM391ZOlGSzFDSwtnQUh0Q` looked like an encoded value so went to [CyberChef](https://gchq.github.io/CyberChef/), reversed and decoded to Base64 and got the flag.
-- Encoded Value => Reverse => `Q0hUQntwSDFzSGlOZ193MF9tNGNyMHM_Pz99` => Base64 Decode => Flag => `CHTB{pH1sHiNg_w0_m4cr0s>??}`
-- But that flag was not accepted and showed incorrect. Probably some decoding error so I went back to [CyberChef](https://gchq.github.io/CyberChef/) and in Base64 Decoding, there was an option for `URL Safe` decoding which gave => `CHTB{pH1sHiNg_w0_m4cr0s???}`. This was one accepted.
+- Encoded Value <span class="fat-arrow">=></span> Reverse <span class="fat-arrow">=></span> `Q0hUQntwSDFzSGlOZ193MF9tNGNyMHM_Pz99` <span class="fat-arrow">=></span> Base64 Decode <span class="fat-arrow">=></span> Flag <span class="fat-arrow">=></span> `CHTB{pH1sHiNg_w0_m4cr0s>??}`
+- But that flag was not accepted and showed incorrect. Probably some decoding error so I went back to [CyberChef](https://gchq.github.io/CyberChef/) and in Base64 Decoding, there was an option for `URL Safe` decoding which gave <span class="fat-arrow">=></span> `CHTB{pH1sHiNg_w0_m4cr0s???}`. This was one accepted.
 

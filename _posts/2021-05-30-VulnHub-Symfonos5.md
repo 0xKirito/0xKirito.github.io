@@ -15,7 +15,7 @@ render_with_liquid: false
 ### Recon & Enumeration
 
 - `sudo netdiscover -i eth0 -r 10.0.2.0/24`
-- Symfonos IP => 10.0.2.10
+- Symfonos IP <span class="fat-arrow">=></span> 10.0.2.10
 
 #### Nmap
 
@@ -308,8 +308,8 @@ userPassword: cetkKf4wCuHC9FET
 
 #### SSH User Access
 
-- `ssh zeus@10.0.2.10` => `cetkKf4wCuHC9FET`
-- `whoami` => `zeus`
+- `ssh zeus@10.0.2.10` <span class="fat-arrow">=></span> `cetkKf4wCuHC9FET`
+- `whoami` <span class="fat-arrow">=></span> `zeus`
 
 ---
 

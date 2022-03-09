@@ -12,7 +12,7 @@ order: 4
 
 <p>Hi!</p>
 
-<p>I'm <span id="about-name">0xKirito</span> and this is my blog where I document my journey in cyber security.</p>
+<p>I'm <span id="about-name" style="font-family: 'Fira Code'; font-size: 1rem; font-weight: bold;">0xKirito</span> and this is my blog where I document my journey in cyber security.</p>
 
 <p>You can reach out to me on <a href="https://twitter.com/0xKirito">Twitter</a>.</p>
 
