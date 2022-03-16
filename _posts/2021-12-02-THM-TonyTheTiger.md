@@ -1,5 +1,5 @@
 ---
-title: "Tony The Tiger"
+title: "Tony The Tiger - THM"
 author:
   name: 0xKirito
   link: https://github.com/0xKirito
@@ -35,7 +35,7 @@ PORT     STATE SERVICE     VERSION
 8083/tcp open  http        JBoss service httpd
 ```
 
-## GoBuster
+### GoBuster
 
 ```
 gobuster dir -u http://10.10.62.36/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 60 -x php,java,txt -k

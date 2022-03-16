@@ -1,5 +1,5 @@
 ---
-title: "Symfonos 5"
+title: "Symfonos 5 - VulnHub"
 author:
   name: 0xKirito
   link: https://github.com/0xKirito

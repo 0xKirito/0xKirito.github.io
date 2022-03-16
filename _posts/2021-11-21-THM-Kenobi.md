@@ -1,5 +1,5 @@
 ---
-title: "Kenobi"
+title: "Kenobi - THM"
 author:
   name: 0xKirito
   link: https://github.com/0xKirito

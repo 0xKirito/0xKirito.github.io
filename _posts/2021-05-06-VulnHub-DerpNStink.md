@@ -1,5 +1,5 @@
 ---
-title: "DerpNStink"
+title: "DerpNStink - VulnHub"
 author:
   name: 0xKirito
   link: https://github.com/0xKirito

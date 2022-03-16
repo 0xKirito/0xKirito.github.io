@@ -1,5 +1,5 @@
 ---
-title: "Armageddon"
+title: "Armageddon - HTB"
 author:
   name: 0xKirito
   link: https://github.com/0xKirito
