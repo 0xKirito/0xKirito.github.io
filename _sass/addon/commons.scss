@@ -44,9 +44,21 @@ code, kbd, pre, samp, .fat-arrow {
   font-family: "Fira Code", monospace;
 }
 
-%heading {
-  font-weight: 600;
+.post-content {
+  h2 {
+    font-weight: 600;
+  }
+
+  h3 {
+    font-weight: 600;
+  }
+
+  h4 {
+    font-weight: 600;
+  }
 }
+
+
 
 
 /* --- Typography --- */
@@ -411,6 +423,7 @@ img[data-src] {
   h1 {
     margin-top: 3rem;
     margin-bottom: 1.5rem;
+    font-weight: 600;
   }
 
   a {
